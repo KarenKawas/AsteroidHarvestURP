@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9cd24e4c4fb79e04eab217ccf2423353
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Space Weel Personal Use
+  fontNames:
+  - Space Weel Personal Use
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 22c0a8dc8cf3f5c4583d4959c1487cb3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

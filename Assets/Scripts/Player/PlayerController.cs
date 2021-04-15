@@ -72,7 +72,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()  //Character movement! 
     {
-
         
         float moveHorizontal = Input.GetAxis("Horizontal"); 
         float moveVertical = Input.GetAxis("Vertical");
@@ -90,6 +89,7 @@ public class PlayerController : MonoBehaviour
          0.0f,
          Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
         );
+        
         rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
 
         // transform. rotation on a reference to the ship model. 

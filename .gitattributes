@@ -54,7 +54,6 @@ Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 *.psd lfs
 *.jpg lfs
 *.jpeg lfs
-*.png lfs
 *.gif lfs
 *.bmp lfs
 *.tga lfs
@@ -66,6 +65,9 @@ Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 *.xcf lfs
 *.svg lfs
 *.exr lfs
+*.spp lfs
+*.zpr lfs
+*.ZPR lfs
 
 # Audio
 *.mp3 lfs
@@ -113,13 +115,22 @@ Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 *.mdb lfs
 *.a lfs
 *.ilk lfs
+*.la lfs
+*.lai lfs
+*.lib lfs
 
 # Packaging
 *.zip lfs
 *.7z lfs
-*.gz lfs
 *.rar lfs
 *.tar lfs
+*.tgz lfs
+*.gz lfs
+
+# Other
+*.ttf lfs
+*.otf lfs
+*.pdf lfs
 
 # Wwise Files
 *.bnk lfs
@@ -130,3 +141,13 @@ Assets/**/*[Ll]ighting*.asset -unityyaml lfs
 *.wem lfs
 *.chm lfs
 *.bundle lfs
+AKSoundEngine lfs
+
+# FMOD files
+*.bank lfs
+
+# special case tracking for WebGL builds + GitHub pages + LFS
+Assets/**/*.png lfs
+Assets/**/*.ico lfs
+Assets/**/*.data lfs
+Assets/**/*.wasm lfs

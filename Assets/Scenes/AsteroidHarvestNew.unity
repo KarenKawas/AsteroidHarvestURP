@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -816,6 +818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1049720662, guid: 9e6cb80db7e991548aef4b9d7bd0ca11, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6945635998044750780, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -876,6 +882,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6947958568687655515, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947958568689459911, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947958569574738207, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947958569574749121, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947958570270888352, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947958570270911358, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6cb80db7e991548aef4b9d7bd0ca11, type: 3}
 --- !u!1 &6947958568830674583 stripped
@@ -896,18 +932,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930ecf9f69ee24f46bc5819f8c18831c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  tilt: 0
+  speed: 15
+  tilt: 0.2
   boundary:
-    xMin: 0
-    xMax: 0
-    zMin: 0
-    zMax: 0
-  shot: {fileID: 0}
-  destroyer: {fileID: 0}
-  shotSpawn: {fileID: 0}
-  destroyerSpawn: {fileID: 0}
-  fireRate: 0
+    xMin: -70
+    xMax: 70
+    zMin: -10
+    zMax: 10
+  shot: {fileID: 5902015071682123995, guid: 5194bd765bce576478e2d561a1303a5e, type: 3}
+  destroyer: {fileID: 2035904913992839692, guid: 60e24df3db3969b42af398f32b224b8e,
+    type: 3}
+  shotSpawn: {fileID: 6947958568830674585}
+  destroyerSpawn: {fileID: 6947958568830674585}
+  fireRate: 0.25
+--- !u!1 &6947958568830674585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7726932289761213485, guid: 9e6cb80db7e991548aef4b9d7bd0ca11,
+    type: 3}
+  m_PrefabInstance: {fileID: 6947958568830674582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8698543242417758061
 PrefabInstance:
   m_ObjectHideFlags: 0
